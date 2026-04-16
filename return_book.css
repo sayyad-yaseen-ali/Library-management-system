@@ -1,0 +1,130 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Black background */
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-size: 42px;
+    text-shadow: 0 0 20px white; /* Glowing effect */
+    margin-bottom: 20px;
+}
+
+/* Table Container */
+.table-container {
+    width: 70%;
+    max-width: 600px; /* Smaller table */
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(138, 43, 226, 0.9); /* Blue Violet background */
+    color: white;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 1); /* Glow effect */
+    border: none; /* No curved edges */
+}
+
+/* Table Headers */
+th {
+    background-color: #b56aff; /* Dark violet */
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+/* Table Rows */
+td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 14px;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #c58bff;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #b56aff;
+    box-shadow: 0 0 20px white;
+}
+
+/* Return Button */
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #8a2be2; /* Your preferred violet color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8); /* Violet Glow */
+}
+
+/* Return Button Hover */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #8a2be2;
+}
+
+/* Go Back Link */
+.go-dashboard {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(45deg, #8a2be2, #6a1bb7); /* Violet Gradient */
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
+}
+
+/* Hover Effect for Go Back */
+.go-dashboard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #8a2be2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-container {
+        width: 90%;
+    }
+    
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .go-dashboard {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}

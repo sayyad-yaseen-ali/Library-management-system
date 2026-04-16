@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main Title */
+h1 {
+    font-size: 60px;
+    color: #8a2be2; /* Violet color */
+    text-shadow: 0 0 25px rgba(138, 43, 226, 1); /* Glow effect */
+    margin-top: 20px;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Stops exactly when the text ends */
+}
+
+/* Animated Paragraph */
+p.first {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards;
+}
+
+/* Navigation Menu */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    background: rgba(138, 43, 226, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 1);
+    transition: 0.3s;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    background: #6a1bb7;
+    transform: scale(1.05);
+}
+
+/* About Section */
+h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* White glow effect */
+    margin-top: 40px;
+}
+
+p.normal {
+    font-size: 30px;
+    color: white;
+    max-width: 80%;
+    margin-top: 10px;
+    line-height: 1.6;
+}

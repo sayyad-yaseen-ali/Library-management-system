@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Profile Picture in Top Right Corner */
+.profile-section {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.profile-img {
+    width: 50px;  /* Smaller size */
+    height: 50px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid white; /* White border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
+}
+
+/* Centered Container */
+.dashboard-container {
+    text-align: center;
+}
+
+/* Dashboard Heading */
+h2 {
+    color: white;
+    font-size: 54px; /* Slightly bigger */
+    text-shadow: 0 0 30px rgba(255, 255, 255, 1); /* Strong glow */
+    margin-bottom: 15px;
+}
+
+/* Typing Effect for Welcome Message */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Stops exactly when the text ends */
+}
+
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+/* Welcome Message */
+p {
+    color: #8a2be2; /* Violet color */
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 0;
+    border-right: 3px solid #8a2be2; /* Cursor effect */
+    animation: typing 3s steps(30, end) forwards, blinkCursor 0.6s step-end infinite;
+    text-shadow: 0 0 25px rgba(138, 43, 226, 1); /* Glow effect */
+    margin-bottom: 20px;
+}
+
+/* Remove cursor after typing finishes */
+p.typed::after {
+    animation: none;
+}
+
+/* Centered Navigation Menu */
+.dashboard-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Styled Navigation Links */
+.dashboard-menu li {
+    background: rgba(138, 43, 226, 0.8);
+    padding: 18px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 1);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.dashboard-menu li a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+    display: block;
+}
+
+/* Hover Effects */
+.dashboard-menu li:hover {
+    background: #6a1bb7;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(138, 43, 226, 1);
+}
