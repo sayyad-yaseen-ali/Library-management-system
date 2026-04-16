@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Glowing Title */
+.glow-text {
+    font-size: 42px;
+    text-shadow: 0 0 20px white, 0 0 30px #8a2be2; /* Strong glow */
+    margin-bottom: 30px; /* More space below heading */
+    margin-top: -10px; /* Adjust spacing */
+}
+
+/* Feedback Message */
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.2);
+    display: inline-block;
+}
+
+/* Form Container */
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(138, 43, 226, 0.9); /* Violet background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 1); /* Glowing effect */
+    text-align: left;
+    margin-bottom: 20px; /* Space between form and buttons */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Input Glow Effect */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #8a2be2;
+}
+
+/* Button Container (Holds Both Buttons) */
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Back Button Styling */
+.button-container a {
+    text-decoration: none;
+}
+
+.custom-button, .glow-button {
+    background: linear-gradient(45deg, #b56aff, #8a2be2);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(181, 106, 255, 0.8);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+/* Hover Effect */
+.custom-button:hover, .glow-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #a35cff, #7a1fd1);
+    box-shadow: 0 0 25px #b56aff;
+}
