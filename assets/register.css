@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Registration Container */
+.container {
+    background: rgba(138, 43, 226, 0.2); /* Semi-transparent purple */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.8); /* Glowing effect */
+    width: 450px; /* Increased width */
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: #fff;
+    margin-bottom: 10px; /* Reduced space */
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
+    font-size: 20px; /* Slightly smaller */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap between fields */
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px rgba(138, 43, 226, 0.8);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+/* Input Fields & Dropdown */
+input, select {
+    padding: 8px;
+    border: 1px solid #8a2be2;
+    border-radius: 5px;
+    font-size: 14px;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+    outline: none;
+    width: 100%;
+}
+
+/* Dropdown Arrow Customization */
+select {
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>'); 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+/* Input Glow Effect on Focus */
+input:focus, select:focus {
+    box-shadow: 0 0 12px rgba(138, 43, 226, 1);
+    border: 1px solid rgba(138, 43, 226, 1);
+}
+
+/* Button */
+button {
+    background: #8a2be2;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6a1bb7;
+    box-shadow: 0 0 12px rgba(138, 43, 226, 1);
+}
+
+/* Register Link */
+p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+p a {
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(138, 43, 226, 0.8);
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #b875ff;
+}
